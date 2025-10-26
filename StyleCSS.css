@@ -1,0 +1,413 @@
+body{
+    font-family: Arial ,sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 97%;
+  z-index: 10;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+#logo img {
+  width: 40px;
+  height: auto;
+}
+
+#logo p {
+  font-size: 17px;
+  font-weight: 600;
+  color: #2b2b2b;
+  letter-spacing: 0.5px;
+}
+
+#nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+}
+
+#nav-links p {
+  margin: 0;
+}
+
+#nav-links a {
+  text-decoration: none;
+  color: #2b2b2b;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+#nav-links a:hover {
+  color: #a1978b;
+}
+
+#nav-links p:last-child a {
+  background: linear-gradient(145deg, #6a6867, #3d3d3d);
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 24px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 15px 30px;
+    border-radius: 50px; 
+    border: none; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    
+    /* JDDID: 7eyyedna 'max-width: 1200px;' */
+    
+    /* JDDID: Beddelna l'margin */
+    /* 20px lfoq/lte7t, o 30px mn limn o lisr */
+    /* (b had l'3bar, ghadi tqreb l jnab o tbqa mdewra) */
+    margin: 20px 30px; 
+}
+.logo-icon {
+    /* JDDID: Beddel had l'qima mn 24px l 20px (aw 18px) */
+    width: 22px; 
+    
+    height: auto;
+    margin-right: 9px;
+    vertical-align: middle;
+}
+/* L'LOGO */
+.logo {
+    font-size: 19.6px;
+    color: #52483E;
+    font-weight: 600px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.logo span {
+    margin-right: 8px;
+}
+
+/* LES LIENS */
+/* Beddel had l'bloc */
+.nav-links a {
+    text-decoration: none;
+    color: #666; /* Loun l'asli */
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ZID HAD L'BLOC JDID L TE7T */
+/* Hada kaygole l navigateur: 7ta l lien li "visited" khllih b loun rmadi */
+.nav-links a:visited {
+    color: #666; 
+}
+
+/* L'hover khllih b7al l'qdim */
+.nav-links a:hover {
+    color: #000;
+}
+.compare-btn {
+    font: poppins;
+    /* L'ktaba lwest tkon byda (bach tban foq l'background ghamq) */
+    color: white; 
+    
+    /* L'PADDING (mn tswira): 10px lfoq/lte7t, 32px f jnab */
+    padding: 10px 32px;
+    
+    /* L'BACKGROUND (mn tswira): Linear Gradient */
+    /* (to bottom = mn lfoq l te7t) */
+    background: linear-gradient(to bottom, #52483E, #888782);
+    
+    /* L'BORDER (mn tswira): 1px */
+    /* Hna 3ndo border gradient, walakin bach nbssto l'code, ndiro ghir loun wa7ed */
+    border: 1px solid #000000; 
+    
+    /* Nkhlliw l'button mdwwer b7al l'design l'qdim */
+    border-radius: 20px; 
+    
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Nzidoha bach l'button yban 7sen mni t'hoveri 3lih */
+.compare-btn:hover {
+    /* Ghadi nqslbo l'gradient */
+    background: linear-gradient(to top, #52483E, #888782);
+}
+/* ============================ */
+/* STYLE DYAL PRODUCT SECTION   */
+/* ============================ */
+
+.product-section {
+    margin-top: 50px;
+    
+    /* JDDID: Nqqesna l'padding f jnab mn 50px l 30px */
+    /* Haka l'klma "Color" ghadi tqreb bzzaf l lisr */
+    padding: 0 30px; 
+}
+
+.color-title {
+    /* Nsta3mlo nefs l'khett dyal l'logo */
+    font-family: 'Poppins', sans-serif; 
+    font-size: 32px; /* Nkebroh chwiya */
+    font-weight: 600; /* SemiBold b7al l'logo */
+    
+    /* Nrdoh b nefs loun dyal l'logo */
+    color: #52483E;
+    
+    /* Nba3doh 3la tswira li te7to */
+    margin-bottom: 30px; 
+}
+
+.product-image {
+    max-width: 100%;
+    width: 400px; /* (Tqdr tbeddel had l'3bar) */
+    margin-bottom: 30px;
+    
+    /* HADO HOWA L'MOHIM: Kay'centriw tswira */
+    display: block;      /* Kayrdha "block" */
+    margin-left: auto;  /* Kaydfa3ha mn lisr l'aqsa limn */
+    margin-right: auto; /* Kaydfa3ha mn limn l'aqsa lisr */
+}
+/* L'boite li jam3a l'alwan */
+.color-swatches {
+    /* 1. Katrddhom wa7ed 7da wa7ed */
+    display: flex; 
+    
+    /* 2. HADA HOWA L'MOHIM: Kay'centrihom f l'west */
+    justify-content: center;
+    
+    /* 3. L'espace binathom */
+    gap: 15px;
+}
+/* Dayra dyal loun */
+.color-circle {
+    width: 50px;  /* L'3ord dyal dayra */
+    height: 50px; /* L'tol dyal dayra */
+    
+    /* HADI MOHIMA: Katrdha dayra */
+    border-radius: 50%;
+    
+    /* Bach l'mouse tban dyal "click" */
+    cursor: pointer;
+    
+    /* Zid chwiya dyal l'border bach ybano mzyan */
+    border: 1px solid #eee;
+    
+    /* Bach l'mtransition tkon zwina ila bghiti tzid 'hover' */
+    transition: transform 0.2s;
+}
+
+/* Zid had l'effet (optionnel) */
+.color-circle:hover {
+    /* Mni t'hoveri, l'dayra tkber chwiya */
+    transform: scale(1.1);
+}
+/* ============================ */
+/* STYLE DYAL FEATURES SECTION  */
+/* ============================ */
+
+.features-section {
+    /* Nba3doh 3la l'alwan li foqo */
+    margin-top: 60px;
+    
+    /* Nkhlliw l'padding b7al l'section li qbel (30px) */
+    padding: 0 30px;
+    
+    /* Nba3doh 3la l'te7t dyal l'page */
+    margin-bottom: 60px;
+}
+
+.feature-block {
+    /* HADI HIYA L'MOHIMA: Katfreeq l'3onwan (lisr) 3la l'lista (limn) */
+    display: flex;
+    
+    /* L'espace bin l'3onwan o l'lista */
+    gap: 40px;
+    
+    /* L'espace lfoq o lte7t dyal kol blok */
+    margin: 40px 0;
+}
+
+.feature-title {
+    /* Kan3tiwh 3ord (Tqdr tbeddel 30%) */
+    flex-basis: 30%;
+    
+    /* Bach l'ktaba matlsaqch 3la l'lista ila l'ecran sghar */
+    flex-shrink: 0;
+}
+
+.feature-title h2 {
+    /* Nfs l'khet dyal l'logo o "Color" */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 28px; /* Chwiya sgher men "Color" */
+    color: #52483E; /* Nefs loun l'logo */
+    
+    /* N7eydo ay margin asli */
+    margin: 0;
+}
+
+.feature-list {
+    /* Kayakhod l'espace li bqa f limn */
+    flex-grow: 1;
+}
+
+.feature-list p {
+    /* Loun rmadi b7al f tswira */
+    color: #555;
+    font-size: 16px;
+    
+    /* L'espace bin kol settar o settar */
+    margin: 0 0 15px 0; /* 0 mn kol jiha, illa lte7t 15px */
+    
+    /* Bach l'khett yban mzyan ila kan f jouj stor */
+    line-height: 1.5; 
+}
+
+/* Style dyal l'khet l'fassel (l' <hr> ) */
+.section-divider {
+    border: none; /* Kan7eydo l'border l'asli */
+    height: 1px; /* L'ghold dyalo 1px */
+    background-color: #eee; /* Loun rmadi bared bzzaf */
+    margin: 30px 0; /* L'espace lfoq o lte7t */
+}
+/* ============================ */
+/* STYLE DYAL SUSTAINABILITY    */
+/* ============================ */
+
+.sustainability-section {
+    /* Loun dyal l'khalfia (rmadi bared) */
+    background-color: #f5f5f5;
+    display: flex;
+    /* L'espace lfoq o lte7t */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    /* Nba3doh 3la l'section li foqo */
+    margin-top: 40px;
+}
+
+/* Kan'centriw l'contenu dyalha b nfs triqa dyal .features-section */
+.sustainability-section .feature-block {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+
+/* ============================ */
+/* STYLE DYAL PROMO SECTION     */
+/* ============================ */
+
+.promo-section {
+    /* Kolchi yji f l'west */
+    text-align: center;
+    
+    /* L'espace lfoq o lte7t */
+    padding: 80px 30px;
+}
+
+.promo-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px; /* L'3onwan kbir */
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.promo-section p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6; /* L'espace bin stor */
+    
+    /* Bach l'paragraph maykonch 3rid bzzaf */
+    max-width: 600px; 
+    
+    /* N'centriwh */
+    margin: 0 auto 30px auto; 
+}
+
+.promo-buttons {
+    display: flex; /* Yjiw wa7ed 7da wa7ed */
+    justify-content: center; /* Yjiw f l'west */
+    gap: 15px; /* L'espace binathom */
+}
+
+.promo-btn {
+    /* Design dyal "Ghost Button" */
+    border: 1px solid #555;
+    background-color: white;
+    color: #555;
+    
+    padding: 10px 25px;
+    border-radius: 20px; /* Jnab mdwrin */
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s; /* Bach l'hover ykon zwin */
+}
+
+.promo-btn:hover {
+    /* L'effet mni t'hoveri */
+    background-color: #333;
+    color: white;
+    border-color: #333;
+}
+
+
+/* ============================ */
+/* STYLE DYAL FOOTER            */
+/* ============================ */
+
+footer {
+    display: flex; /* Bach yjiw mfrrqin */
+    justify-content: space-between; /* L'logo f lisr, l'baqi f limn */
+    align-items: center; /* Yjiw f nfs l'khett */
+    
+    /* L'khet lfoqani */
+    border-top: 1px solid #eee;
+    
+    /* L'espace dakhli o khariji */
+    padding: 30px 40px;
+    margin-top: 60px;
+}
+
+/* Nsghhro l'logo f l'footer */
+footer .logo {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555; /* Loun rmadi */
+}
+
+footer .logo-icon {
+    width: 18px; /* Icon sgher */
+    margin-right: 6px;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: #888; /* Loun rmadi bared */
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: #888;
+}

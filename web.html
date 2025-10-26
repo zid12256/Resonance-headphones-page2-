@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Compare</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="web.css">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background: rgba(245, 245, 245, 1);
+                font-family: Poppins, sans-serif;
+            }
+
+            header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 64px;
+                padding: 0 20px;
+                background: rgba(245, 245, 245, 1);
+            }
+
+            .logo {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                height: 46px;
+            }
+
+            .icon {
+                width: 26px;
+                height: 26px;
+                flex-shrink: 0;
+            }
+
+            .title {
+                font-family: Poppins, sans-serif;
+                font-weight: 600;
+                font-size: 19.6px;
+                line-height: 19.6px;
+                letter-spacing: 0%;
+                color: rgba(82, 72, 62, 1);
+                margin: 0;
+            }
+
+            .bottun {
+                display: flex;
+                flex-direction: row;
+                gap: 16px;
+                height: 44px;
+                align-items: center;
+            }
+
+            .button {
+                width: 96px;
+                height: 44px;
+                padding: 10px 24px;
+                border: 1px solid transparent;
+                background: transparent;
+                color: rgba(82, 72, 62, 1);
+                font-family: Poppins, sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+                cursor: pointer;
+                border-radius: 8px;
+                transition: all 0.3s ease;
+            }
+
+            .button:hover {
+                background: rgba(82, 72, 62, 0.1);
+            }
+
+            .button-active {
+                background: linear-gradient(180deg, #52483E 0%, #8B8782 100%);
+                color: #FFFFFF;
+                border: 1px solid #52483E;
+                border-radius: 20px;
+            }
+
+            .button-active:hover {
+                opacity: 0.9;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="logo">
+                <div class="icon">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2094_215)">
+                            <path d="M4.875 9.75V16.25" stroke="#52483E" stroke-width="2.4375" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.9375 3.25V22.75" stroke="#52483E" stroke-width="2.4375" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 6.5V19.5" stroke="#52483E" stroke-width="2.4375" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.0625 9.75V16.25" stroke="#52483E" stroke-width="2.4375" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.125 8.125V17.875" stroke="#52483E" stroke-width="2.4375" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2094_215">
+                                <rect width="26" height="26" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <h1 class="title">Compare</h1>
+            </nav>
+            <nav class="bottun">
+                <button class="button" type="button">Home</button>
+                <button class="button" type="button">Tech Specs</button>
+                <button class="button button-active" type="button">Compare</button>
+            </nav>
+        </header>
+    </body>
+</html>
